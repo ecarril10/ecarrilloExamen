@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ecarrilloExamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Examen Parcial 1" FontSize="24" HorizontalTextAlignment="Center" NavigationPage.HasNavigationBar="False"/>
+            <Image WidthRequest="100" HeightRequest="100" Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO"  Grid.Row="0" Grid.Column="0" Style="{StaticResource miEstiloLbl}"/>
+                <Label Text="CONTRASEÑA" Grid.Row="1" Grid.Column="0" Style="{StaticResource miEstiloLbl}"/>
+
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1" Style="{StaticResource miEstiloEnt}"/>
+                <Entry x:Name="txtContrasena" Placeholder="Ingrese contraseña" Grid.Row="1" Grid.Column="1" Style="{StaticResource miEstiloEnt}"/>
+
+            </Grid>
+
+            <Button x:Name="btInicio" Text="INICIAR SECION" Clicked="btInicio_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
